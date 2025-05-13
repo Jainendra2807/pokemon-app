@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.Cards_Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://images.pexels.com/photos/7708406/pexels-photo-7708406.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Cards_Subcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    gap: 8px;
+}
+
+.Cards_img {
+    width: 200px;
+    height: 150px;
+}
+
+.Cards_Info {
+    background-color: peru;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    border: 1px solid black;
+    margin-bottom: 30px;
+}
+
+.Card_button {
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    margin-right: 40px;
+    cursor: pointer;
+    background-color: rgb(246, 135, 95);
+}
+
+img {
+    width: 150px;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+.No_paragraph {
+    color: white;
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .Cards_Container {
+        width: 100%;
+        height: 100%;   
+    }
+    .Cards_Subcontainer {
+        flex-direction: column;
+        margin-top: 40px;
+        gap: 20px;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 300px) {
+    .Cards_Container {
+        background-size: contain;
+        padding: 20px;
+        height: 100%;
+    }
+    .Cards_Subcontainer {
+        flex-direction: column;
+        margin-top: 40px;
+        width: 100%;
+       height: 100%;
+    }
+}

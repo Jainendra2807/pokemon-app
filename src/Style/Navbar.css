@@ -1,0 +1,177 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fbd744;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar img {
+  width: 70px;
+  height: 50px;
+  border-radius: 20px;
+  padding:0;
+}
+
+.l1 a {
+  font-size: 30px;
+  color: black;
+  text-decoration: none;
+  margin-right: 520px;
+}
+
+.l1 a:hover {
+  color: blue;
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  margin: 0 15px;
+  font-size: 20px;
+}
+
+.navbar-item a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-item a:hover {
+  color: blue;
+}
+
+
+
+@media (max-width: 1024px) {
+  .l1 a {
+    margin-right: 200px;
+    font-size: 25px;
+  }
+
+  .navbar-item {
+    font-size: 18px;
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .l1 a {
+    margin-right: 0;
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+
+  .navbar-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-item {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar img {
+    width: 50px;
+    height: 40px;
+  }
+
+  .l1 a {
+    font-size: 20px;
+  }
+
+  .navbar-item {
+    font-size: 16px;
+    margin: 8px 0;
+  }
+}
+
+
+
+
+/* .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+ background-color: gold;
+  border-bottom: 2px solid #ccc;
+}
+
+.navbar img {
+  height: 50px;
+  width: auto;
+}
+
+.navbar-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-list li {
+  margin-left: 20px;
+}
+
+.navbar-list a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar img {
+    height: 40px;
+  }
+
+  .navbar-list {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-list li {
+    margin: 10px 0;
+    text-align: left;
+    width: 100%;
+  }
+
+  .navbar-list a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar img {
+    height: 30px;
+  }
+
+  .navbar-list a {
+    font-size: 14px;
+  }
+} */
+
